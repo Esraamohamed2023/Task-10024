@@ -1,0 +1,125 @@
+          /* Start All_section */
+          
+          #All_section {
+              margin: var(--main-margin);
+              padding: var(--main-padding);
+              padding: 100px 0;
+              background-image: url("../../Images/background.jpg");
+          }
+          /* Start All_section */
+          /* Start our_menue */
+          
+          #All_section .container_elements {
+              display: grid;
+              grid-template-columns: repeat(3, minmax(300px, 1fr));
+              grid-template-rows: 200px 1fr;
+              gap: 20px;
+              grid-template-areas: "first first first""second second second";
+          }
+          /* End ourmenue */
+          /* Start  menue_head*/
+          
+          #All_section .head {
+              height: 200px;
+              padding: 10px;
+              position: relative;
+              grid-area: first;
+          }
+          /* End  .menue_head*/
+          /* Start  image*/
+          
+          .head .image {
+              display: flex;
+              /* justify-content: center; */
+              flex-direction: column;
+              color: var(--main-color);
+              height: 100px;
+              position: absolute;
+              right: calc(50% - 150px);
+              transform: translateX(-50%);
+          }
+          
+          .head .image img {
+              width: 150px;
+              margin: 10px 0;
+          }
+          /* End  image */
+          /* Start menuefun */
+          
+          .menuefun {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              color: var(--main-color);
+          }
+          
+          .small {
+              color: gray;
+              margin: 10px 0;
+          }
+          
+          .menuefun img {
+              width: 100%;
+              position: relative;
+              transition: var(--transition);
+          }
+          
+          .menuefun img:hover {
+              top: -20px;
+          }
+          /* End menuefun */
+          /* Start stars */
+          
+          .menuefun .stars {
+              font-size: 20px;
+              color: rgb(250, 250, 62);
+              font-weight: bold;
+              margin-bottom: 10px;
+          }
+          /* End icon */
+          /* Start menue_list */
+          
+          .menue_list {
+              display: grid;
+              grid-template-columns: repeat(3, minmax(300px, 1fr));
+              grid-area: second;
+          }
+          /* ######################## Media Queries ####################*/
+          /* Small */
+          
+          @media ( max-width:700px) {
+              #All_section .container_elements {
+                  grid-template-columns: repeat(3, minmax(100px, 1fr));
+                  grid-template-rows: 200px auto;
+                  grid-template-areas: "first first first""second second second"
+              }
+              .menue_list {
+                  grid-template-columns: 1fr;
+              }
+          }
+          /* medium */
+          
+          @media(min-width:700px) {
+              .menue_list {
+                  grid-template-columns: repeat(2, 1fr);
+              }
+              #All_section .container_elements {
+                  grid-template-columns: repeat(3, minmax(100px, 1fr));
+                  grid-template-rows: 200px auto;
+                  grid-template-areas: "first first first""second second second"
+              }
+          }
+          
+          @media(min-width:992px) {
+              .menue_list {
+                  grid-template-columns: repeat(3, 1fr);
+              }
+              #All_section .container_elements {
+                  grid-template-columns: repeat(3, minmax(300px, 1fr));
+                  grid-template-rows: 200px 1fr;
+                  grid-template-areas: "first first first""second second second";
+              }
+          }
+          /* End menue_list */

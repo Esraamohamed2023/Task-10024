@@ -1,0 +1,15 @@
+.aboutfun .mix {
+    display: flex;
+}
+
+.mix .mixicon {
+    color: rgb(230, 230, 82);
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.mix p {
+    color: var(--main-color);
+    font-size: 15px;
+    /* margin-top: 12px; */
+}

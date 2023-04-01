@@ -1,0 +1,132 @@
+            /* Start Allpart */
+            
+            #Allpart {
+                margin: var(--main-margin);
+                padding: 50px;
+                background-image: url("../../../Images/background.jpg");
+            }
+            /* End Allpart */
+            /* Start container_elements */
+            
+            #Allpart .elements {
+                display: grid;
+                grid-template-columns: minmax(250px, 1fr);
+                grid-template-rows: 600px 800px 800px;
+                grid-template-areas: "first ""second""third";
+                row-gap: 60px;
+            }
+            /* End elements*/
+            /* Start slider */
+            
+            .elements .slider {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                grid-area: first;
+            }
+            
+            .elements .slider img {
+                width: 100%;
+                height: 100%;
+            }
+            /* End slider */
+            /* Start swiper */
+            
+            .swiper {
+                width: 80%;
+                border-radius: 5%;
+                box-shadow: -1px 2px 6px 0px #fff;
+                height: 80%;
+            }
+            
+            .swiper-button-prev,
+            .swiper-button-next {
+                color: #812a2a !important;
+            }
+            
+            .swiper-pagination-bullet {
+                background-color: #812a2a !important;
+            }
+            /* End swiper */
+            /* Start About */
+            
+            .about {
+                grid-area: second;
+                display: grid;
+                grid-template-columns: minmax(250px, 1fr);
+                grid-template-rows: 100px 700px;
+                grid-template-areas: "firstpart ""secondpart";
+            }
+            
+            .about .head {
+                grid-area: firstpart;
+            }
+            /* Start twopart */
+            
+            .about .twopart {
+                grid-area: secondpart;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            
+            .text {
+                /* padding: 60px 20px; */
+                width: 100%;
+                grid-area: text;
+            }
+            
+            .text h3 {
+                color: var(--main-color);
+                margin-bottom: 10px;
+            }
+            
+            .text p {
+                color: rgb(141, 139, 139);
+                margin-bottom: 20px;
+            }
+            
+            .twopart .img {
+                grid-area: img;
+            }
+            
+            .twopart .img img {
+                width: 100%;
+                height: 100%;
+            }
+            /*End twopart */
+            /* Start aboutmap */
+            
+            .aboutmap {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(100px, 300px));
+                grid-template-rows: repeat(2, 30px);
+                row-gap: 20px;
+                margin: 20px 0;
+            }
+            /* End aboutmap */
+            /* End About */
+            /* Start dailyposts */
+            
+            .dailyposts {
+                grid-area: third;
+            }
+            /* End dailyposts */
+            /* Start responsive design */
+            /* ######################## Media Queries ####################*/
+            
+            @media ( max-width:768px) {
+                #Allpart .elements {
+                    grid-template-rows: 300px 800px;
+                }
+                .twopart {
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+                .twopart .img {
+                    grid-area: one;
+                }
+                .two .text {
+                    grid-area: two;
+                }
+            }

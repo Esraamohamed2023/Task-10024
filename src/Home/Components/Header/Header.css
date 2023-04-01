@@ -1,0 +1,124 @@
+            /* start header  */
+            
+            #header {
+                height: 90px;
+                padding: 10px 10px;
+                width: 100%;
+                background-color: var(--head-color);
+                position: fixed;
+                z-index: 10;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+            /* End header  */
+            /* start .container_elements */
+            
+            #header .container_elements {
+                display: grid;
+                grid-template-columns: repeat(10, minmax(50px, 1fr));
+                grid-template-rows: 1fr;
+                grid-template-areas: "first  second second second second second second second third third ";
+            }
+            /* End .container_elements */
+            /* start header image */
+            
+            .image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 66px;
+                grid-area: first;
+            }
+            
+            .image img {
+                height: 80%;
+                mix-blend-mode: multiply;
+            }
+            /* End header image */
+            /* start header ul */
+            
+            #header .container_elements ul {
+                display: flex;
+                justify-content: center;
+                color: var(--main-color);
+                align-items: center;
+                grid-area: second;
+            }
+            
+            #header ul li {
+                margin: 0 7px;
+                font-size: 18px;
+                padding: 5px;
+                font-weight: bold;
+                transition: .5s;
+                color: var(--main-color);
+                padding: 10px 5px;
+                transition: var(--transition);
+            }
+            
+            #header ul li:hover {
+                border-top: 3px solid rgb(242, 141, 105);
+                border-radius: 9px;
+                background-color: #873b3b;
+            }
+            
+            #header ul li>a {
+                color: var(--main-color);
+                position: relative;
+                overflow: hidden;
+                margin: 0 4px;
+            }
+            
+            #header ul li>a:hover {
+                color: var(--second-color);
+                background-color: #863636;
+                border-radius: 5px;
+            }
+            
+            #header ul li>a.active {
+                color: rgb(242, 141, 105);
+                border-radius: 5px;
+                font-weight: bolder;
+            }
+            /*End header ul */
+            /* start header header_icons  */
+            
+            #header .header_icons {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                grid-area: third;
+            }
+            
+            #header .header_icons .icon {
+                font-size: 18px;
+                color: var(--main-color);
+                cursor: pointer;
+                margin: 0 15px;
+            }
+            /* End header  header_icons*/
+            /* Start responsive design */
+            /* ######################## Media Queries ####################*/
+            
+            @media ( max-width:768px) {
+                #header .header_icons {
+                    display: none;
+                }
+                #header .container_elements {
+                    grid-template-columns: repeat(5, minmax(20px, .5fr));
+                    grid-template-rows: .5fr;
+                    grid-template-areas: "first  second second second second ";
+                }
+                #header ul li {
+                    font-size: 15px;
+                    font-weight: normal;
+                }
+            }
+            /* medium */
+            
+            @media(max-width:992px) {}
+            /* large */
+            
+            @media(max-width:1200px) {}
+            /* End responsive design */

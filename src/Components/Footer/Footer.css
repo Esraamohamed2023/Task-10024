@@ -1,0 +1,36 @@
+/* Start footer*/
+
+#footer {
+    padding: 20px 0;
+    background-color: var(--head-color);
+    text-align: center;
+}
+
+#footer .cont {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+#footer a {
+    margin: 0 20px;
+    font-size: 20px;
+    background-color: var(--main-color);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#footer a:hover {
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+}
+
+#footer p {
+    color: var(--main-color);
+    font-weight: bold;
+    width: 150px;
+    margin: auto;
+}
+
+
+/* End footer */

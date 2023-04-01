@@ -1,0 +1,26 @@
+    /* Start posts */
+    
+    #posts {
+        border: 2px solid rgb(180, 177, 177);
+        color: var(--main-color);
+        text-align: center;
+        padding: 10px;
+    }
+    
+    #posts img {
+        width: 100%;
+        filter: opacity(.5);
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    
+    #posts img:hover {
+        filter: opacity(1);
+        transform: rotate(3deg) scale(1.1);
+    }
+    
+    #posts p {
+        color: rgb(137, 135, 135);
+        margin-bottom: 20px;
+    }
+    /* End posts */

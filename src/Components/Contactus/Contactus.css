@@ -1,0 +1,131 @@
+/* Start container */
+
+.container {
+    background-image: url(../../Images/background.jpg);
+    padding: 250px 0;
+    display: grid;
+    grid-template-columns: repeat(10, minmax(100px, 1fr));
+    grid-template-rows: 1fr;
+    gap: 20px;
+    grid-template-areas: "first first first first second second second second second second";
+}
+
+
+/*End container */
+
+
+/* Start contactfun */
+
+.contact {
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+
+.contactmap {
+    grid-area: first;
+    margin: 50px 0 0 0;
+}
+
+.contact .icon {
+    background-color: rgb(179, 119, 8);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.contact h5 {
+    margin-bottom: 7px;
+}
+
+h2 {
+    color: var(--main-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* End contactfun */
+
+
+/* Start contactpart */
+
+.contactpart {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*End contactpart */
+
+
+/* Start form */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    grid-area: second;
+}
+
+.form form input {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    background-color: transparent;
+    border: 2px solid var(--third-color);
+    color: var(--main-color);
+}
+
+.form form input:hover {
+    box-shadow: -1px 1px 13px 3px #c54e4e;
+}
+
+.form form input:nth-child(4) {
+    height: 150px;
+}
+
+.form form input[type='submit'] {
+    transition: var(--transition);
+    width: 100%;
+    background-color: rgba(240, 231, 231, .5);
+    font-weight: bold;
+    color: black;
+    height: 50px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.form form input[type='submit']:hover {
+    background-color: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--third-color);
+    font-size: 20px;
+}
+
+
+/* End form */
+
+
+/* ######################## Media Queries ####################*/
+
+@media ( max-width:990px) {
+    .container {
+        padding: 100px 0;
+        grid-template-columns: repeat(5, minmax(50px, 1fr));
+        grid-template-rows: auto;
+        grid-template-areas: "first first first first first""  second second second second second";
+    }
+    .form {
+        width: 100%;
+        padding: 20px;
+    }
+}

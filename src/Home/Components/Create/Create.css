@@ -1,0 +1,53 @@
+        /* Start create*/
+        
+        #create {
+            padding: var(--main-padding);
+            background-image: url(../../../Images/background.jpg);
+        }
+        
+        #create .contain {
+            display: grid;
+            grid-template-columns: minmax(300px, 1fr);
+            grid-template-rows: 600px;
+            color: var(--main-color);
+            row-gap: 20px;
+        }
+        /* Start form */
+        
+        #create form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border: 2px solid var(--main-color);
+            padding: 20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        #create caption {
+            font-weight: bold;
+            font-size: 25px;
+            margin: 50px;
+        }
+        
+        #create form input {
+            height: 30px;
+            background-color: transparent;
+            border: 2px solid var(--main-color);
+            color: var(--main-color);
+            width: 100%;
+        }
+        
+        form .button {
+            display: flex;
+        }
+        
+        #create form input[type='submit'] {
+            background-color: var(--third-color);
+            cursor: pointer;
+            font-weight: bold;
+            width: 49%;
+            margin-right: 2%;
+        }
+        /* End form */
+        /* End create */
