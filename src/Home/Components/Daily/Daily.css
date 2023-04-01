@@ -2,7 +2,6 @@
                 
                 .daily {
                     display: grid;
-                    /* grid-template-columns: minmax(400px, 1fr); */
                     grid-template-rows: 150px 1fr;
                     row-gap: 20px;
                     grid-template-areas: "head""post";
@@ -15,15 +14,15 @@
                 .daily .posttag {
                     grid-area: post;
                     display: grid;
-                    grid-template-columns: repeat(3, 400px);
-                    grid-template-rows: 600px;
-                    gap: 15px;
+                    grid-template-columns: repeat(3, minmax(350px, 1fr));
+                    grid-template-rows: 650px;
+                    gap: 20px;
                 }
                 /* End daily */
                 /* Start responsive design */
                 /* ######################## Media Queries ####################*/
                 
-                @media ( max-width:768px) {
+                @media ( max-width:800px) {
                     .daily .posttag {
                         grid-template-columns: 100%;
                         grid-template-rows: repeat(3, 1fr);

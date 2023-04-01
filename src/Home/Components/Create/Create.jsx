@@ -2,7 +2,7 @@ import React from 'react'
 import"./Create.css"
 export default function Create() {
   return (
-    <div id="create">
+    <div id="create" data-aos="fade-down">
     <div className="contain">
           <form action='path' method='post'>
           <caption>Registration</caption>

@@ -4,7 +4,7 @@ import product from"../../Images/product.png"
 import"./menue.css"
 export default function Menuefun({img}) {
   return (
-    <div className='menuefun'>
+    <div className='menuefun' data-aos="fade-up">
       <img src={img} alt="not found"/>
   <div className="stars">
   <AiTwotoneStar/>

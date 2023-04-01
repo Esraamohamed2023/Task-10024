@@ -44,9 +44,9 @@ export default function Landing() {
     
       </div>
       <div className="about" id="About">
-      <div className="head">
+      <div className="head" data-aos="fade-up">
       
-      <div className="image">
+      <div className="image" >
       <img src={title} alt="not found"/>
       <h2>ABOUT</h2>
      
@@ -55,10 +55,10 @@ export default function Landing() {
       </div>
      
       <div className="twopart">
-      <div className="img">
+      <div className="img" data-aos="fade-right">
       <img src={product} alt="not found"/>
       </div>
-      <div className="text">
+      <div className="text"data-aos="fade-left">
       <h3>STEP INTO BURGER HEAVEN</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus exercitationem delectus quae velit, id ea mollitia eos porro, numquam dolore sapiente. Ut rerum animi iusto fuga minus cum atque?</p>
       <div className="aboutmap">

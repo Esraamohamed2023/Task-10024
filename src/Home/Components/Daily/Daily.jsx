@@ -16,7 +16,7 @@ export default function Daily() {
       </div>
       
     </div>
-    <div className="posttag">
+    <div className="posttag" data-aos="fade-down">
     {Postsdata.map((ele)=>{
         return(<Posts key={ele.id} img={ele.img}/>)
     })}
