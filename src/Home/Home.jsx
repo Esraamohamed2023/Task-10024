@@ -19,11 +19,11 @@ export default function Home() {
     <Head/>
     <Routes>
     
-    <Route path='/' element={<Landing/>}> </Route>
+    <Route path='*' element={<Landing/>}> </Route>
     <Route path='/menue' element={<Menue/>}> </Route>
     <Route path='/contact us' element={<Contactus/>}> </Route>
     <Route path='/create' element={<Create/>}> </Route>
-    <Route path='*' element={<Landing/>}> </Route>
+    
     </Routes>
     <Footer/>
     </BrowserRouter>
