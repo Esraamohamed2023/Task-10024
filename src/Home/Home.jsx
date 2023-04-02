@@ -7,6 +7,7 @@ import Contactus from '../Components/Contactus/Contactus';
 import Landing from './Components/Landing/Landing';
 import Footer from '../Components/Footer/Footer';
 import Create from './Components/Create/Create';
+import Notfound from './Components/Notfound/Notfound';
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
     <Route path='/menue' element={<Menue/>}> </Route>
     <Route path='/contact us' element={<Contactus/>}> </Route>
     <Route path='/create' element={<Create/>}> </Route>
+    <Route path='*' element={<Landing/>}> </Route>
     </Routes>
     <Footer/>
     </BrowserRouter>
